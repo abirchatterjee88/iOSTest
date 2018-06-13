@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImageViewAligned.h"
 
 @interface FeedCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UILabel *titleLbl;
-@property (strong, nonatomic) IBOutlet UILabel *descLbl;
-@property (strong, nonatomic) IBOutlet UIImageView *imgView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLbl;
+@property (weak, nonatomic) IBOutlet UILabel *descLbl;
+@property (weak, nonatomic) IBOutlet UIImageViewAligned *imgView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imgHtConst;
 @end

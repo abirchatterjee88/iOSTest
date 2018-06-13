@@ -12,6 +12,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.imgView.alignLeft = YES;
     // Initialization code
 }
 
